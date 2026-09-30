@@ -1,0 +1,1 @@
+import type{Metadata}from'next';import'./globals.css';export const metadata:Metadata={title:'TwinTrip — 계획대로 되지 않는 여행까지',description:'관광데이터와 상황데이터로 여행 전 위험을 점검하고 여행 중 일정을 다시 설계하는 AI 여행 지원 서비스'};export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ko"><body>{children}</body></html>}

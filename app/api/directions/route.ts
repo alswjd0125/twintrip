@@ -1,0 +1,1 @@
+import{NextResponse}from'next/server';export async function GET(){return NextResponse.json(process.env.MAP_API_KEY?{available:false,message:'지도 제공기관 어댑터를 설정해 주세요.'}:{available:false,message:'지도 API가 설정되지 않았어요.'})}

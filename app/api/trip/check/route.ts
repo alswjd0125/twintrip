@@ -1,0 +1,1 @@
+import{NextRequest,NextResponse}from'next/server';export async function POST(r:NextRequest){let{weather}=await r.json(),risks:any[]=[];if(weather?.rainProbability>=60)risks.push({type:'WEATHER',severity:'HIGH',message:'강수확률이 높아요.'});return NextResponse.json({score:Math.max(0,100-risks.length*20),risks})}

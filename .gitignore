@@ -1,0 +1,59 @@
+# Dependencies and partial installs
+node_modules
+node_modules.partial
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Secrets: only the empty example is public
+.env*
+!.env.example
+.dev.vars*
+*.pem
+*.key
+*.p12
+*.pfx
+*.credentials.json
+
+# Builds, caches, local deployment state
+.next/
+.vinext/
+.wrangler/
+.vercel/
+.output/
+.nitro/
+dist/
+build/
+out/
+coverage/
+.cache/
+*.tsbuildinfo
+next-env.d.ts
+
+# Temporary outputs and local captures
+output/
+outputs/
+work/
+tmp/
+temp/
+submission-screenshots/
+/*-final.png
+*.log
+*.tmp
+*.bak
+*.save
+*.swp
+*~
+__pycache__/
+*.py[cod]
+
+# Local editor / OS metadata
+.DS_Store
+.AppleDouble
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,1 @@
+import{NextResponse}from'next/server';export async function GET(){return NextResponse.json(process.env.WEATHER_API_KEY?{available:false,message:'날씨 제공기관 어댑터를 설정해 주세요.'}:{available:false,message:'날씨 API가 설정되지 않았어요.'})}
